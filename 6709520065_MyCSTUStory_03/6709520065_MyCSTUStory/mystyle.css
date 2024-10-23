@@ -10,46 +10,30 @@ body{
     background-color: #34252F;
 }
 
-/* this control heaader property */
-.headen {
-    
-    
+header{
+    display: flex;
+    border: 10px blue solid;
 }
-/* this set color in header idk, maybe not important */
-#header-bg-color{
-    
-    height: 50px;
-    width: 50%;
-}
-
-#Sidee{
-    padding-top: 10px;
-    padding-left: 30px;
+main{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    border: 10px bisque solid;
+    padding: 5px;
+    margin-bottom: 30px;
 }
 
-/* from this on is a <body> mess */
-
-
-
-
-/* this set introword */
-*#introduction{
-        /* this is for fade-out animation */
-        animation: Sussyline linear forwards;
-        animation-timeline: view(100px 100px);
-        animation-range: exit ;
-
-    /* background-color: aqua; */
-    margin-top: 150px;
-    padding-top: 50px;
-    padding-left: 70px;
-    height: 350px;
-    width: 50%;
-    float: left;
-    
-
+section{
+    border: 5px blue solid;
+}
+article{
+    border: 5px black solid;
+    align-self: flex-end;
 }
 
+#portrait{
+    height: 40vh;
+}
 .button-page1{
 
          
@@ -75,7 +59,10 @@ body{
     
 }
 
-.footer1{
+footer{
+    display: flex;
+    align-items: end;
+    padding: 30px;
     background-color: #BEC5AD;
     width: 100%;
     
@@ -152,166 +139,6 @@ body{
     
 }
 
-
-
-
-
-
-
-
-
-
-@keyframes Sussyline {
-    to {
-        top: -50px;
-        opacity: 0;
-        transform: rotateZ(-15deg);
-    }
-}
-
-#pictureofahandsomeyoungman{
-
-        /* this is for fade-out animation */
-        animation: portrait linear forwards;
-        animation-timeline: view();
-        animation-range: exit ;
-
-    /* background-color: tomato; */
-    height: 630px;
-    margin-right: 40px;
-    width: 40%;
-    float: left;
-    position: relative;
-    
-    margin-top: 30px;
-
-}
-
-
-
-#ptb1{
-    background-color: #3B5249;
-    height: 200px;
-    margin-right: 40px;
-
-
-    width: 200px;
-    
-
-    position: absolute;
-    top: 50px;
-    left: -100px;
-    border-radius: 100% ;
-    
-    
-}
-
-#ptb2{
-    background-color: #BEC5AD;
-    height: 400px;
-    width: 400px;
-    margin-right: 40px;
-
-
-    
-    
-
-    position: absolute;
-    top: 70px;
-    left: -100px;
-    border-radius: 59% 41% 40% 60% / 72% 47% 53% 28%;
-    
-    
-}
-
-
-
-#pt{
-    border-radius: 59% 41% 40% 60% / 72% 47% 53% 28%;
-    position: relative;
-}
-
-
-
-@keyframes portrait{
-    to{ opacity: 0; scale: 0.7; transform: rotateZ(15deg);}
-    
-}
-/* This animation part are containing an expiremental property "animation-timeline: ; and nanimation-range: ;" 
-. this might cause an animation not working properly on older browser. 
-but mine work just fine :), and it's relatively easy to learn and understand than that of a java scroll thingy. 
-so this animation part is solely for better understanding how animation property and keyframes works,
-I learn this one from MR.kevin Powell on his youtube channel "kevin Povell" please sub to him :) */
-
-#video {
-    /* this is for fade-in animation */
-    
-    opacity: 20%;
-    animation: video-fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
-
-    background-color: #3B5249;
-    height: 670px;
-    width: 100%;
-    position: relative;
-    margin-top: 10px;
-    
-    
-
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}
-
-#i {
-    position: relative; 
-    left: -400px;
-    height: 70%;
-    padding-top: 5px;
-    width: auto; 
-    object-fit: cover; 
-}
-
-
-
-@keyframes video-fade-in{
-    to {  opacity: 1; }
-}
-
-/* setting a background for displaying video */
-
-
-
-#deng{
-        opacity: 20%;
-        animation: video-fade-in linear forwards;
-        animation-timeline: view();
-        animation-range: entry;
-    border: solid;
-    padding: 10px;
-    padding-bottom: 30px;
-    position: absolute;
-    top: 990px;
-    left: 500px;
-    z-index: 1;
-}
-
-.footer1{
-    padding: 70px;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.footer2{
-    position: absolute;
-    top: 2000px;
-    background-color: #e4f1d4;
-    width: 100%;
-    padding: 70px;
-    padding-left: 150px;
-    padding-right: 150px;
-}
 
 
 .myjourney{
