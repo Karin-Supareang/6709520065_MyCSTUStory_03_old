@@ -8,32 +8,101 @@
 
 body{
     background-color: #34252F;
+    display: flow-root;
 }
 
 header{
     display: flex;
-    border: 10px blue solid;
+    
+    
+    margin-top: 30px;
+    margin-left: 30px;
 }
 main{
+    
+    height: 100vh;
+    
     display: flex;
     align-items: center;
     flex-wrap: wrap-reverse;
-    border: 10px bisque solid;
+    
+    margin-left: 50px;
+    justify-content: space-around;
+
+    
     padding: 5px;
     margin-bottom: 30px;
 }
 
-section{
-    border: 5px blue solid;
+
+
+aside{
+    
+   margin-left: -35px; 
+    
 }
 article{
-    border: 5px black solid;
-    align-self: flex-end;
+    
+    
+    order: 1
+
+    
+    
 }
 
-#portrait{
-    height: 40vh;
+.videocontainer{
+    
+    height: 100vh;
+    width: 100dvw;
+    background-color: hwb(148 32% 40%);
+    order: -1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
 }
+
+#videoo{
+
+    display: block;
+    max-width: 100%;
+    height: 280px;
+    
+
+}
+
+#videodescri{
+
+
+    
+    margin: 100px;
+    width: 50vh;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    
+
+    
+}
+
+
+
+
+#portrait{
+    display: block;
+    max-width: 100%;
+    width: 350px;
+    border-radius: 5px;
+    border: solid  hwb(148 32% 40%);
+    background-color: #55364b;
+    
+    
+}
+
+
+
 .button-page1{
 
          
